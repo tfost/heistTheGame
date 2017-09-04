@@ -1,13 +1,30 @@
 package brassgames.heist.util;
 
-/**
- * Created by Anthony on 9/3/2017.
- */
-
+@SuppressWarnings("WeakerAccess")
 public class User {
-    private String name;
+    public final String name;
+    public final boolean host;
+    public final boolean thief;
 
-    public User() {
-        this.name = "Doug";
+    public User(String name, boolean thief) {
+        this(name, thief, false);
+    }
+
+    public User(String name, boolean thief, boolean host) {
+        this.name = name;
+        this.thief = thief;
+        this.host = host;
+    }
+
+    private String badge() {
+        if(thief) {
+            return "Thief";
+        } else {
+            return "Police";
+        }
+    }
+
+    public String toString() {
+        return name + "\n" + badge();
     }
 }
