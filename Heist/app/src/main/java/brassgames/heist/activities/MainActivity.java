@@ -20,8 +20,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void join(View view) {
-        ((EditText) findViewById(R.id.room)).setVisibility(View.VISIBLE);
-        ((Button) findViewById(R.id.join)).setVisibility(View.GONE);
+        findViewById(R.id.room).setVisibility(View.VISIBLE);
+        findViewById(R.id.join).setVisibility(View.GONE);
         ((Button) findViewById(R.id.host)).setText(R.string.action_join_room);
     }
 
