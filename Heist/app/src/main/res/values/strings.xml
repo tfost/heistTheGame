@@ -1,4 +1,10 @@
 <resources>
     <string name="app_name">Heist</string>
     <string name="action_settings">Settings</string>
+    <string name="action_host">Host</string>
+    <string name="action_join">Join</string>
+    <string name="hint_name">username</string>
+    <string name="title_activity_lobby">LobbyActivity</string>
+    <string name="hint_room">room code</string>
+    <string name="action_join_room">Join Room</string>
 </resources>
